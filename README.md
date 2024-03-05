@@ -3,7 +3,7 @@
 
 # 修订历史
 
-[SDK版本更新日志](https://developers.ranfenghd.com/doc/pages/adsios/)
+[SDK版本更新日志](http://adssp.ranfenghd.com/doc/pages/adsios/)
 
 
 # 1. 概述
