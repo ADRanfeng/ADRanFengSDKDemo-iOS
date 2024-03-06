@@ -184,7 +184,7 @@ pod 'ADRanFengSDK','~>2.1.0.1'
 ...
 
 // 申请的 appid 必须与您的包名一一对应
-[ADRanFengSDK initWithAppId:@"100004" completionBlock:^(NSError * _Nullable error) {
+[ADRanFengSDK initWithAppId:@"100002" completionBlock:^(NSError * _Nullable error) {
      if (error){
          NSLog(@"初始化失败%@",error);
      }
@@ -289,7 +289,7 @@ ADRanFengSDK.enablePersonalAd = NO;
 - (void)loadSplashAd{
       //1、 初始化开屏加载实例
     _splashAd = [[ADRanFengSplashAd alloc]init];
-    _splashAd.posId = @"72386f91450a";
+    _splashAd.posId = @"cfdb1428a7e9";
     _splashAd.delegate = self;
     // 设置默认启动图(一般设置启动图的平铺颜色为背景颜色，使得视觉效果更加平滑)
     _splashAd.backgroundColor = [UIColor adrf_getColorWithImage:[UIImage imageNamed:@"750x1334.png"] withNewSize:[UIScreen mainScreen].bounds.size];
@@ -488,7 +488,7 @@ if(!_nativeAd) {
    // 1、信息流广告初始化
     _nativeAd = [[ADRanFengNativeExpressAd alloc]initWithAdSize:CGSizeMake(UIScreen.mainScreen.bounds.size.width, 10)];
     _nativeAd.delegate = self;
-    _nativeAd.posId = @"e5f4b2a97831";
+    _nativeAd.posId = @"caef8b4d5630";
     _nativeAd.controller = self;
 }
 
@@ -606,7 +606,7 @@ if(!_nativeAd) {
     // 1、初始化插屏广告
     self.interstitialAd = [[ADRanFengInterstitialAd alloc]init];
     self.interstitialAd.controller = self;
-    self.interstitialAd.posId   =   @"93d5b6714a20";
+    self.interstitialAd.posId   =   @"f25b17968ad4";
     self.interstitialAd.delegate = self;
     [self.interstitialAd loadAdData];
 }
@@ -709,7 +709,7 @@ if(!_nativeAd) {
     self.rewardVodAd = [[ADRanFengRewardVodAd alloc] init];
     self.rewardVodAd.delegate = self;
     self.rewardVodAd.controller = self;
-    self.rewardVodAd.posId = @"7562ea3b4f09";
+    self.rewardVodAd.posId = @"593c7af1624b";
     [self.rewardVodAd loadAdData];
 }
 
