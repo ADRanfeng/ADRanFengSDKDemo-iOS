@@ -102,7 +102,7 @@
     _isHeadBidding = YES;
     _isSucceed = NO;
     AdRfBannerItem *item = self.array[0];
-    [self loadBannerWithRate:item.rate posId:@"e8340cb1275d"];
+    [self loadBannerWithRate:item.rate posId:@"1d3b42c865a9"];
 
 }
 

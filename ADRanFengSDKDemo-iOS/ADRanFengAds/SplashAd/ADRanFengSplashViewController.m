@@ -115,7 +115,7 @@
     }
 //    发送竞价成功通知
     [_splashAd sendWinFailNotificationReason:(ADRanFengBiddingLossReasonLowPrice) winnerPirce:100];
-    [_splashAd showInWindow:[UIApplication sharedApplication].keyWindow withBottomView:self.fullBool ? nil : [self getBottomView] ];
+    [self.view makeToast:@"splash开屏广告展示失败"];
     
 }
 
